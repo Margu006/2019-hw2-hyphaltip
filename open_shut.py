@@ -12,7 +12,8 @@ file="/bigdata/gen220/shared/simple/title.basics.tsv.gz"
 
 
 if not os.path.exists(file):
-    os.system("curl -O https://datasets.imdbws.com/title.akas.tsv.gz")
+    os.system("curl -O https://datasets.imdbws.com/title.basics.tsv.gz")
 
 with gzip.open(file,"r") as fh:
     # now use the csv reader to read in the file, delimiter is '\t'
+    print("Add code here")
