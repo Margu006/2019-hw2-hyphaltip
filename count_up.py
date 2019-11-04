@@ -31,8 +31,27 @@ if not os.path.exists(gff):
 
 if not os.path.exists(fasta):
     os.system("curl -O ftp://ftp.ensemblgenomes.org/pub/bacteria/release-45/fasta/bacteria_0_collection/escherichia_coli_str_k_12_substr_mg1655/dna/Escherichia_coli_str_k_12_substr_mg1655.ASM584v2.dna.chromosome.Chromosome.fa.gz")
-    
-with gzip.open(gff,"r") as fh:
+
+gene_count = 0
+gene_length = 0
+genome_length = 0
+with gzip.open(gff,"rt") as fh:
     # now add code to process this
     # data such as
-    # for line in fh:
+    for line in fh:
+        if line[0].startswith("#"):
+            continue
+        row = line.split("\t")
+
+        if row[2] == 'gene':
+            gene_count += 1
+            gene_length += (int(row[4]) - int(row[3]) + 1)
+
+with gzip.open(fasta,"rt") as fh:
+    seqs = aspairs(fh)
+    for seq in seqs:
+        genome_length += len(seq[1])
+
+print("%d genes and %d length genic"%(gene_count,gene_length))
+print("%.1f%% coding of %d bp genome"%( 100 * (gene_length / genome_length),
+                                     genome_length))

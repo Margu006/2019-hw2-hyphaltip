@@ -1,0 +1,5 @@
+There are 5709 titles with door or Door
+There are 804 titles with [Ddoor] as word
+There are 1119 titles with Open as a word and 291 with Closed
+There are 1409 titles with Open or Closed
+There are 1 titles with Open and Closed

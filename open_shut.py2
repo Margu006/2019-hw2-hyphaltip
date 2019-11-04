@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python2
 
 import os,csv,gzip,re
 
@@ -20,16 +20,14 @@ opened = 0
 closed = 0
 open_or_closed = 0
 open_and_closed = 0
+openre       = re.compile(r'\sOpen\s')
+closedre     = re.compile(r'\sClosed\s')
 
-openre = re.compile(r'\sOpen\s')
-closedre = re.compile(r'\sClosed\s')
-#openclosedre = re.compile(r'\s(Open|Closed)\s')
-
-with gzip.open(file,"r") as fh:
+with gzip.open(file,"rt") as fh:
     # now use the csv reader to read in the file, delimiter is '\t'
-    header = next(fh)
-    for line in fh:
-        row = line.decode('utf-8').strip().split("\t")
+    csvin = csv.reader(fh,delimiter="\t")
+    header = next(csvin)
+    for row in csvin:
         title = row[2]
 
         if "door" in title or "Door" in title:

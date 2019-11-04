@@ -1,0 +1,75 @@
+4554 genes in Salmonella_enterica_subsp_enterica_serovar_typhimurium_str_lt2.ASM694v2.cds.all.fa.gz
+4295160 total gene length
+53.35% GC
+1431720 codon count
+===
+4018 genes in Mycobacterium_tuberculosis_h37rv.ASM19595v2.cds.all.fa.gz
+4027296 total gene length
+65.90% GC
+1342432 codon count
+===
+Codon	Salmonella_enterica_subsp_enterica_serovar_typhimurium_str_lt2	Mycobacterium_tuberculosis_h37rv
+AAA	3.17%	0.53%
+AAC	2.01%	2.00%
+AAG	1.12%	1.51%
+AAT	1.79%	0.53%
+ACA	0.58%	0.46%
+ACC	2.34%	3.52%
+ACG	1.89%	1.56%
+ACT	0.67%	0.37%
+AGA	0.24%	0.13%
+AGC	1.75%	1.45%
+AGG	0.17%	0.32%
+AGT	0.73%	0.35%
+ATA	0.54%	0.22%
+ATC	2.44%	3.39%
+ATG	2.74%	1.84%
+ATT	2.94%	0.65%
+CAA	1.28%	0.81%
+CAC	0.96%	1.58%
+CAG	3.09%	2.27%
+CAT	1.33%	0.64%
+CCA	0.58%	0.61%
+CCC	0.70%	1.70%
+CCG	2.46%	3.13%
+CCT	0.72%	0.34%
+CGA	0.36%	0.72%
+CGC	2.32%	2.84%
+CGG	0.70%	2.46%
+CGT	1.86%	0.84%
+CTA	0.49%	0.48%
+CTC	1.05%	1.73%
+CTG	5.34%	5.03%
+CTT	1.18%	0.54%
+GAA	3.51%	1.62%
+GAC	2.03%	4.22%
+GAG	2.07%	3.06%
+GAT	3.17%	1.58%
+GCA	1.30%	1.28%
+GCC	2.92%	5.98%
+GCG	4.25%	4.85%
+GCT	1.28%	1.10%
+GGA	0.87%	1.00%
+GGC	3.53%	5.13%
+GGG	1.21%	1.92%
+GGT	1.73%	1.89%
+GTA	1.13%	0.47%
+GTC	1.82%	3.27%
+GTG	2.52%	4.00%
+GTT	1.55%	0.80%
+TAA	0.19%	0.05%
+TAC	1.15%	1.47%
+TAG	0.03%	0.09%
+TAT	1.72%	0.61%
+TCA	0.63%	0.36%
+TCC	1.01%	1.15%
+TCG	0.95%	1.93%
+TCT	0.72%	0.22%
+TGA	0.10%	0.16%
+TGC	0.67%	0.66%
+TGG	1.52%	1.47%
+TGT	0.49%	0.22%
+TTA	1.32%	0.16%
+TTC	1.52%	2.33%
+TTG	1.24%	1.78%
+TTT	2.33%	0.62%
